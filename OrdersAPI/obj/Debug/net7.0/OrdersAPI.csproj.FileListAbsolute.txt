@@ -1,0 +1,78 @@
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\appsettings.Development.json
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\appsettings.json
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\OrdersAPI.exe
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\OrdersAPI.deps.json
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\OrdersAPI.runtimeconfig.json
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\OrdersAPI.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\OrdersAPI.pdb
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Humanizer.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Npgsql.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\bin\Debug\net7.0\System.CodeDom.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.csproj.AssemblyReference.cache
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.AssemblyInfoInputs.cache
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.AssemblyInfo.cs
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.csproj.CoreCompileInputs.cache
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.OrdersAPI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.OrdersAPI.props
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.OrdersAPI.props
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.OrdersAPI.props
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\staticwebassets.build.json
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\staticwebassets.development.json
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\scopedcss\bundle\OrdersAPI.styles.css
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.csproj.CopyComplete
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\refint\OrdersAPI.dll
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.pdb
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\OrdersAPI.genruntimeconfig.cache
+E:\Projects\CloudTechnologies\OrdersAPI\OrdersAPI\obj\Debug\net7.0\ref\OrdersAPI.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\appsettings.Development.json
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\appsettings.json
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\OrdersAPI.exe
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\OrdersAPI.deps.json
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\OrdersAPI.runtimeconfig.json
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\OrdersAPI.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\OrdersAPI.pdb
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Humanizer.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Npgsql.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\bin\Debug\net7.0\System.CodeDom.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.csproj.AssemblyReference.cache
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.AssemblyInfoInputs.cache
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.AssemblyInfo.cs
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.csproj.CoreCompileInputs.cache
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.OrdersAPI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.OrdersAPI.props
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.OrdersAPI.props
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.OrdersAPI.props
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\staticwebassets.build.json
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\staticwebassets.development.json
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\scopedcss\bundle\OrdersAPI.styles.css
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.csproj.CopyComplete
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\refint\OrdersAPI.dll
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.pdb
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\OrdersAPI.genruntimeconfig.cache
+E:\Projects\CloudTechnologies\OrdersAPI(All CRUD)\OrdersAPI\obj\Debug\net7.0\ref\OrdersAPI.dll
