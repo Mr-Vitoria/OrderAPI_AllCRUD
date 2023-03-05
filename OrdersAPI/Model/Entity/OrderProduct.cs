@@ -1,11 +1,15 @@
-﻿namespace OrdersAPI.Model.Entity
+﻿using System.Text.Json.Serialization;
+
+namespace OrdersAPI.Model.Entity
 {
     public class OrderProductModel
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
+        [JsonIgnore]
         public ProductModel Product { get; set; }
         public int OrderId { get; set; }
+        [JsonIgnore]
         public OrderModel Order { get; set; }
         public int Count { get; set; }
 
