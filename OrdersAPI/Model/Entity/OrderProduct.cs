@@ -7,10 +7,11 @@
         public ProductModel Product { get; set; }
         public int OrderId { get; set; }
         public OrderModel Order { get; set; }
+        public int Count { get; set; }
 
         public OrderProductModel()
         {
-
+            Count = 0;
         }
 
         public OrderProductModel(int id, int productId, ProductModel product, int orderId, OrderModel order)
@@ -23,7 +24,7 @@
         }
         public override string ToString()
         {
-            return $"{Id} - {ProductId} - {OrderId}";
+            return $"{Id} - {ProductId} - {OrderId} - {Count}";
         }
     }
 }

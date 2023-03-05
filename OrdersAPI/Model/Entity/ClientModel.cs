@@ -1,9 +1,13 @@
-﻿namespace OrdersAPI.Model.Entity
+﻿using System.Text.Json.Serialization;
+
+namespace OrdersAPI.Model.Entity
 {
     public class ClientModel
     {
         public int Id { get; set; }
         public string? Name { get; set; }
+        [JsonIgnore]
+        public ICollection<OrderModel> Orders { get; set; }
 
         public ClientModel()
         {

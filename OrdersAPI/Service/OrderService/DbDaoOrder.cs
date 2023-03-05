@@ -40,6 +40,16 @@ namespace OrdersAPI.Service.OrderService
             return await db.Orders.ToListAsync();    
         }
 
+        public async Task<List<OrderModel>> GetFullAllOrders()
+        {
+            //Lazy load
+            db.Clients.Load();
+            return await db.Orders.ToListAsync();
+
+            //Eager load
+            //return await db.Orders.Include(or => or.Client).ToListAsync();
+        }
+
         public async Task<OrderModel> GetOrderById(int id)
         {
             return await db.Orders.FirstOrDefaultAsync(or => or.Id == id);

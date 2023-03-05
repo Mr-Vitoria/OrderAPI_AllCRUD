@@ -44,6 +44,11 @@ namespace OrdersAPI.Service.OrderProductService
             return await db.OrderProducts.FirstOrDefaultAsync(or => or.Id == id);
         }
 
+        public async Task<List<OrderProductModel>> GetProductByOrderId(int id)
+        {
+            return await db.OrderProducts.Where(pr => pr.OrderId == id).Include(pr=>pr.Product).ToListAsync();
+        }
+
         public async Task<OrderProductModel> UpdateOrderProduct(OrderProductModel orderProduct)
         {
             db.OrderProducts.Update(orderProduct);

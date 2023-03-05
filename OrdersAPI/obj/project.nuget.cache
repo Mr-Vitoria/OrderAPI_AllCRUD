@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C4dTw09L4L6LhAfbeOpOla5PluG8VAHO0NgsFbXpSQqJDJhb/BBJ+EIOd5TioY/gXNOtf1GZgdnNBQA1YyDSvQ==",
+  "dgSpecHash": "6OakYqWlOjuN8p1333jDw3lHFdPfsrAevdkpSPf8AX2xnuqpp5cNMicSAfUyBgkUyNLHX7wUszEmHIkOcVuufQ==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\CloudTechnologies\\OrdersAPI(All CRUD)\\OrdersAPI\\OrdersAPI.csproj",
+  "projectFilePath": "E:\\GitHub\\OrderAPI_AllCRUD\\OrdersAPI\\OrdersAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olegn\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\olegn\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.3\\microsoft.entityframeworkcore.7.0.3.nupkg.sha512",

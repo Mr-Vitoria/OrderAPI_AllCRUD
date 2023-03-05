@@ -75,6 +75,10 @@ app.MapGet("/order/all", async (HttpContext context, IDaoOrder dao) =>
 {
     return await dao.GetAllOrders();
 });
+app.MapGet("/order/fullAll", async (HttpContext context, IDaoOrder dao) =>
+{
+    return await dao.GetFullAllOrders();
+});
 app.MapGet("/order/get", async (HttpContext context, IDaoOrder dao,int id) =>
 {
     return await dao.GetOrderById(id);
@@ -118,6 +122,12 @@ app.MapPost("/order_product/delete", async (HttpContext context, IDaoOrderProduc
     return await dao.DeleteOrderProduct(id);
 });
 
+
+app.MapGet("/check", async (HttpContext context, IDaoOrderProduct dao, int OrderId) =>
+{
+    List<OrderProductModel> product = await dao.GetProductByOrderId(OrderId);
+    return new { Products = product,Count = product.Sum(pr=>pr.Count) };
+});
 
 
 
