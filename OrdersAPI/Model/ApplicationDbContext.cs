@@ -18,7 +18,8 @@ namespace OrdersAPI.Model
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            optionsBuilder.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+            string userConnection = configuration.GetSection("UserConnection").Value;
+            optionsBuilder.UseNpgsql(configuration.GetConnectionString(userConnection));
         }
     }
 }
