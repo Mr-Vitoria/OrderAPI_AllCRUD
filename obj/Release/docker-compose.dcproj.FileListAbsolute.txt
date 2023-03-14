@@ -1,0 +1,15 @@
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\OrdersAPI.deps.json
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\OrdersAPI.runtimeconfig.json
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\appsettings.Development.json
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\appsettings.json
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\OrdersAPI.exe
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\OrdersAPI.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.EntityFrameworkCore.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.EntityFrameworkCore.Relational.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Npgsql.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\OrdersAPI.pdb
+E:\GitHub\OrderAPI_AllCRUD\obj\Release\docker-compose.dcproj.AssemblyReference.cache
+E:\GitHub\OrderAPI_AllCRUD\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache
+E:\GitHub\OrderAPI_AllCRUD\obj\Release\docker-compose.dcproj.CopyComplete

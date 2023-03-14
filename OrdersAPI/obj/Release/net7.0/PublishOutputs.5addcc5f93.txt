@@ -1,0 +1,14 @@
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\OrdersAPI.exe
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\appsettings.json
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\OrdersAPI.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\OrdersAPI.runtimeconfig.json
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\OrdersAPI.pdb
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.Design.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\Npgsql.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\PubTmp\Out\OrdersAPI.deps.json

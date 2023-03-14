@@ -66,6 +66,9 @@ namespace OrdersAPI.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Count")
+                        .HasColumnType("integer");
+
                     b.Property<int>("OrderId")
                         .HasColumnType("integer");
 
@@ -95,6 +98,9 @@ namespace OrdersAPI.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
+                    b.Property<int>("Price")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Products");
@@ -103,7 +109,7 @@ namespace OrdersAPI.Migrations
             modelBuilder.Entity("OrdersAPI.Model.Entity.OrderModel", b =>
                 {
                     b.HasOne("OrdersAPI.Model.Entity.ClientModel", "Client")
-                        .WithMany()
+                        .WithMany("Orders")
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -114,13 +120,13 @@ namespace OrdersAPI.Migrations
             modelBuilder.Entity("OrdersAPI.Model.Entity.OrderProductModel", b =>
                 {
                     b.HasOne("OrdersAPI.Model.Entity.OrderModel", "Order")
-                        .WithMany()
+                        .WithMany("OrderProducts")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("OrdersAPI.Model.Entity.ProductModel", "Product")
-                        .WithMany()
+                        .WithMany("OrderProducts")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -128,6 +134,21 @@ namespace OrdersAPI.Migrations
                     b.Navigation("Order");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("OrdersAPI.Model.Entity.ClientModel", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("OrdersAPI.Model.Entity.OrderModel", b =>
+                {
+                    b.Navigation("OrderProducts");
+                });
+
+            modelBuilder.Entity("OrdersAPI.Model.Entity.ProductModel", b =>
+                {
+                    b.Navigation("OrderProducts");
                 });
 #pragma warning restore 612, 618
         }

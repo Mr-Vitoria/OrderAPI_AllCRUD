@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\CloudTechnologies\\OrdersAPI(All CRUD)\\OrdersAPI\\OrdersAPI.csproj": {}
+    "E:\\GitHub\\OrderAPI_AllCRUD\\OrdersAPI\\OrdersAPI.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\CloudTechnologies\\OrdersAPI(All CRUD)\\OrdersAPI\\OrdersAPI.csproj": {
+    "E:\\GitHub\\OrderAPI_AllCRUD\\OrdersAPI\\OrdersAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\CloudTechnologies\\OrdersAPI(All CRUD)\\OrdersAPI\\OrdersAPI.csproj",
+        "projectUniqueName": "E:\\GitHub\\OrderAPI_AllCRUD\\OrdersAPI\\OrdersAPI.csproj",
         "projectName": "OrdersAPI",
-        "projectPath": "E:\\Projects\\CloudTechnologies\\OrdersAPI(All CRUD)\\OrdersAPI\\OrdersAPI.csproj",
+        "projectPath": "E:\\GitHub\\OrderAPI_AllCRUD\\OrdersAPI\\OrdersAPI.csproj",
         "packagesPath": "C:\\Users\\olegn\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\CloudTechnologies\\OrdersAPI(All CRUD)\\OrdersAPI\\obj\\",
+        "outputPath": "E:\\GitHub\\OrderAPI_AllCRUD\\OrdersAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\olegn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +50,10 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -74,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
