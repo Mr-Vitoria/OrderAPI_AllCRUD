@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   ordersapi:
-    container_name: OrdersAPI_1
+    container_name: OrdersAPI
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  ordersapi:
+    image: ${DOCKER_REGISTRY-}ordersapi
+    ports:
+      - 5005:443 
+      - 8008:80
+    build:
+      context: .
+      dockerfile: OrdersAPI/Dockerfile
