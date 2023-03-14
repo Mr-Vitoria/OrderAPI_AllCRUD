@@ -3,7 +3,6 @@ version: '3.4'
 services:
   ordersapi:
     image: ordersapi:dev
-    container_name: OrdersAPI
     build:
       target: base
       labels:
