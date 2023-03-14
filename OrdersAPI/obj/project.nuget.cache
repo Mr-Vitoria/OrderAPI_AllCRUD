@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6OakYqWlOjuN8p1333jDw3lHFdPfsrAevdkpSPf8AX2xnuqpp5cNMicSAfUyBgkUyNLHX7wUszEmHIkOcVuufQ==",
+  "dgSpecHash": "Ah/zhVxwNnc5SsUX4LzVXTXUzXf1/cpDqnkYoJedeunK2G8V+fxJd+xyNyyrPLAsh+qsjIYG7Ib+l3BJ1v2rqg==",
   "success": true,
   "projectFilePath": "E:\\GitHub\\OrderAPI_AllCRUD\\OrdersAPI\\OrdersAPI.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\olegn\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\olegn\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\olegn\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\olegn\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\olegn\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\olegn\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\olegn\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
