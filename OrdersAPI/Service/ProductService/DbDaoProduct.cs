@@ -4,22 +4,23 @@ using OrdersAPI.Model.Entity;
 
 namespace OrdersAPI.Service.ProductService
 {
-    public class DbDaoProduct : IDaoProduct
+    public class DbDaoProduct : IDaoTemplate<ProductModel>
     {
         ApplicationDbContext db;
         public DbDaoProduct(ApplicationDbContext db)
         {
             this.db = db;
         }
-        public async Task<ProductModel> AddProduct(ProductModel product)
+
+        public async Task<ProductModel> Add(ProductModel element)
         {
-            product.Id = await db.Products.CountAsync();
-            await db.Products.AddAsync(product);
+            element.Id = await db.Products.CountAsync();
+            await db.Products.AddAsync(element);
             await db.SaveChangesAsync();
-            return product;
+            return element;
         }
 
-        public async Task<bool> DeleteProduct(int id)
+        public async Task<bool> Delete(int id)
         {
             ProductModel client = await db.Products.FirstOrDefaultAsync(cl => cl.Id == id);
 
@@ -32,21 +33,21 @@ namespace OrdersAPI.Service.ProductService
             return false;
         }
 
-        public async Task<List<ProductModel>> GetAllProducts()
+        public async Task<List<ProductModel>> GetAll()
         {
             return await db.Products.ToListAsync();
         }
 
-        public async Task<ProductModel> GetProductById(int id)
+        public async Task<ProductModel> GetById(int id)
         {
             return await db.Products.FirstOrDefaultAsync(pr => pr.Id == id);
         }
 
-        public async Task<ProductModel> UpdateProduct(ProductModel product)
+        public async Task<ProductModel> Update(ProductModel element)
         {
-            db.Products.Update(product);
+            db.Products.Update(element);
             await db.SaveChangesAsync();
-            return product;
+            return element;
         }
     }
 }

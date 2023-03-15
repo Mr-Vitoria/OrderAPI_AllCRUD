@@ -12,34 +12,6 @@ namespace OrdersAPI.Service.OrderService
             this.db = db;
         }
 
-
-        public async Task<OrderModel> AddOrder(OrderModel order)
-        {
-            order.Id = await db.Orders.CountAsync();
-            await db.Orders.AddAsync(order);
-            await db.SaveChangesAsync();
-            return order;
-
-        }
-
-        public async Task<bool> DeleteOrder(int id)
-        {
-            OrderModel order = await db.Orders.FirstOrDefaultAsync(or => or.Id == id);
-
-            if (order != null)
-            {
-                db.Orders.Remove(order);
-                await db.SaveChangesAsync();
-                return true;
-            }
-            return false;
-        }
-
-        public async Task<List<OrderModel>> GetAllOrders()
-        {
-            return await db.Orders.ToListAsync();    
-        }
-
         public async Task<List<OrderModel>> GetFullAllOrders()
         {
             //Lazy load
@@ -50,12 +22,6 @@ namespace OrdersAPI.Service.OrderService
             //return await db.Orders.Include(or => or.Client).ToListAsync();
         }
 
-
-        public async Task<OrderModel> GetOrderById(int id)
-        {
-            return await db.Orders.FirstOrDefaultAsync(or => or.Id == id);
-        }
-
         public async Task<OrderModel> GetFullOrderById(int id)
         {
             await db.OrderProducts.LoadAsync();
@@ -63,11 +29,42 @@ namespace OrdersAPI.Service.OrderService
             return await db.Orders.FirstOrDefaultAsync(or => or.Id == id);
         }
 
-        public async Task<OrderModel> UpdateOrder(OrderModel order)
+        public async Task<List<OrderModel>> GetAll()
         {
-            db.Orders.Update(order);
+            return await db.Orders.ToListAsync();
+        }
+
+        public async Task<OrderModel> GetById(int id)
+        {
+            return await db.Orders.FirstOrDefaultAsync(or => or.Id == id);
+        }
+
+        public async Task<OrderModel> Add(OrderModel element)
+        {
+            element.Id = await db.Orders.CountAsync();
+            await db.Orders.AddAsync(element);
             await db.SaveChangesAsync();
-            return order;
+            return element;
+        }
+
+        public async Task<OrderModel> Update(OrderModel element)
+        {
+            db.Orders.Update(element);
+            await db.SaveChangesAsync();
+            return element;
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            OrderModel order = await db.Orders.FirstOrDefaultAsync(or => or.Id == id);
+
+            if (order != null)
+            {
+                db.Orders.Remove(order);
+                await db.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
     }
 }

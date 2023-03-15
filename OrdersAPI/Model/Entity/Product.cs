@@ -7,7 +7,7 @@ namespace OrdersAPI.Model.Entity
         public int Id { get; set; }
         public string? Name { get; set; }
         public int Article { get; set; }
-        public int Price { get; set; }
+        public float Price { get; set; }
         [JsonIgnore]
         public ICollection<OrderProductModel> OrderProducts { get; set; }
 

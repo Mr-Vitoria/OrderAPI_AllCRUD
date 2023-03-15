@@ -2,14 +2,9 @@
 
 namespace OrdersAPI.Service.OrderService
 {
-    public interface IDaoOrder
+    public interface IDaoOrder :IDaoTemplate<OrderModel>
     {
-        Task<List<OrderModel>> GetAllOrders();
         Task<List<OrderModel>> GetFullAllOrders();
-        Task<OrderModel> GetOrderById(int id);
         Task<OrderModel> GetFullOrderById(int id);
-        Task<OrderModel> AddOrder(OrderModel order);
-        Task<OrderModel> UpdateOrder(OrderModel order);
-        Task<bool> DeleteOrder(int id);
     }
 }

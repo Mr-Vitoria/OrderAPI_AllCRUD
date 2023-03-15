@@ -4,7 +4,7 @@ using OrdersAPI.Model.Entity;
 
 namespace OrdersAPI.Service.OrderProductService
 {
-    public class DbDaoOrderProduct : IDaoOrderProduct
+    public class DbDaoOrderProduct : IDaoTemplate<OrderProductModel>
     {
         ApplicationDbContext db;
         public DbDaoOrderProduct(ApplicationDbContext db)
@@ -12,16 +12,14 @@ namespace OrdersAPI.Service.OrderProductService
             this.db = db;
         }
 
-
-        public async Task<OrderProductModel> AddOrderProduct(OrderProductModel orderProduct)
+        public async Task<OrderProductModel> Add(OrderProductModel element)
         {
-            orderProduct.Id = await db.OrderProducts.CountAsync();
-            await db.OrderProducts.AddAsync(orderProduct);
+            element.Id = await db.OrderProducts.CountAsync();
+            await db.OrderProducts.AddAsync(element);
             await db.SaveChangesAsync();
-            return orderProduct;
+            return element;
         }
-
-        public async Task<bool> DeleteOrderProduct(int id)
+        public async Task<bool> Delete(int id)
         {
             OrderProductModel orderProduct = await db.OrderProducts.FirstOrDefaultAsync(or => or.Id == id);
 
@@ -34,21 +32,21 @@ namespace OrdersAPI.Service.OrderProductService
             return false;
         }
 
-        public async Task<List<OrderProductModel>> GetAllOrderProducts()
+        public async Task<List<OrderProductModel>> GetAll()
         {
             return await db.OrderProducts.ToListAsync();
         }
 
-        public async Task<OrderProductModel> GetOrderProductById(int id)
+        public async Task<OrderProductModel> GetById(int id)
         {
             return await db.OrderProducts.FirstOrDefaultAsync(or => or.Id == id);
         }
 
-        public async Task<OrderProductModel> UpdateOrderProduct(OrderProductModel orderProduct)
+        public async Task<OrderProductModel> Update(OrderProductModel element)
         {
-            db.OrderProducts.Update(orderProduct);
+            db.OrderProducts.Update(element);
             await db.SaveChangesAsync();
-            return orderProduct;
+            return element;
         }
     }
 }
