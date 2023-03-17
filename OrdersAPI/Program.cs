@@ -130,18 +130,26 @@ app.MapGet("/check", async (HttpContext context, IDaoOrder dao, int OrderId) =>
     OrderModel order = await dao.GetFullOrderById(OrderId);
 
     //Версия, выводящая именно Product
-    //order.OrderProducts.Load
-    //return new { Products = order.OrderProducts.Select(ordPr=>ordPr.Product),
-    //    FullPrice = order.OrderProducts.Sum(ordPr=> ordPr.Count*ordPr.Product.Price) };
-
-
-    //Версия, выводящая OrderProduct
     return new
     {
-        OrderProducts = order.OrderProducts,
+        Products = order.OrderProducts.Select(ordPr => ordPr.Product),
         FullPrice = order.OrderProducts.Sum(ordPr => ordPr.Count * ordPr.Product.Price)
     };
+
+    //Понял
+
+    //Версия, выводящая OrderProduct
+    //return new
+    //{
+    //    OrderProducts = order.OrderProducts,
+    //    FullPrice = order.OrderProducts.Sum(ordPr => ordPr.Count * ordPr.Product.Price)
+    //};
 });
+
+
+
+
+
 
 
 app.MapGet("/fullOrderInfo", async (HttpContext context, IDaoOrder dao, int OrderId) =>
