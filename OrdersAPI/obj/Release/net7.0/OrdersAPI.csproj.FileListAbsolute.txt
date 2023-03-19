@@ -37,3 +37,10 @@ E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\refint\OrdersAPI.dll
 E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\OrdersAPI.pdb
 E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\OrdersAPI.genruntimeconfig.cache
 E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\obj\Release\net7.0\ref\OrdersAPI.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\GitHub\OrderAPI_AllCRUD\OrdersAPI\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll

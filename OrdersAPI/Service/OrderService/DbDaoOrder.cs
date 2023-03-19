@@ -16,7 +16,7 @@ namespace OrdersAPI.Service.OrderService
         {
             //Lazy load
             await db.Clients.LoadAsync();
-            await db.OrderProducts.LoadAsync()
+            await db.OrderProducts.LoadAsync();
             return await db.Orders.ToListAsync();
 
             //Eager load
