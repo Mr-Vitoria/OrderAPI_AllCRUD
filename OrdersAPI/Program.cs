@@ -124,43 +124,16 @@ app.MapPost("/order_product/delete", async (HttpContext context, IDaoTemplate<Or
 });
 
 
-//Other method
+//Other methods
 app.MapGet("/check", async (HttpContext context, IDaoOrder dao, int OrderId) =>
 {
-    OrderModel order = await dao.GetFullOrderById(OrderId);
-
-    //Версия, выводящая именно Product
-    return new
-    {
-        Products = order.OrderProducts.Select(ordPr => ordPr.Product),
-        FullPrice = order.OrderProducts.Sum(ordPr => ordPr.Count * ordPr.Product.Price)
-    };
-
-    //Понял
-
-    //Версия, выводящая OrderProduct
-    //return new
-    //{
-    //    OrderProducts = order.OrderProducts,
-    //    FullPrice = order.OrderProducts.Sum(ordPr => ordPr.Count * ordPr.Product.Price)
-    //};
+    return await dao.Bill(OrderId);
 });
-
-
-
-
-
 
 
 app.MapGet("/fullOrderInfo", async (HttpContext context, IDaoOrder dao, int OrderId) =>
 {
-    OrderModel order = await dao.GetFullOrderById(OrderId);
-
-    return new
-    {
-        OrderProducts = order.OrderProducts,
-        CountProducts = order.OrderProducts.Sum(ordPr => ordPr.Count)
-    };
+    return await dao.FullOrderInfo(OrderId);
 });
 
 

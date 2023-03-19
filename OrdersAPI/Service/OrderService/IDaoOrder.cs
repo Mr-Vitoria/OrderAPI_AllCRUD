@@ -6,5 +6,8 @@ namespace OrdersAPI.Service.OrderService
     {
         Task<List<OrderModel>> GetFullAllOrders();
         Task<OrderModel> GetFullOrderById(int id);
+        Task<object> Bill(int id);
+        Task<object> FullOrderInfo(int id);
+        
     }
 }

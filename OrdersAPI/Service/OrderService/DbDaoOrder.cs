@@ -15,7 +15,8 @@ namespace OrdersAPI.Service.OrderService
         public async Task<List<OrderModel>> GetFullAllOrders()
         {
             //Lazy load
-            db.Clients.Load();
+            await db.Clients.LoadAsync();
+            await db.OrderProducts.LoadAsync()
             return await db.Orders.ToListAsync();
 
             //Eager load
@@ -65,6 +66,27 @@ namespace OrdersAPI.Service.OrderService
                 return true;
             }
             return false;
+        }
+
+        public async Task<object> Bill(int id)
+        {
+            OrderModel order = await GetFullOrderById(id);
+
+            return new
+            {
+                Products = order.OrderProducts.Select(ordPr => ordPr.Product),
+                FullPrice = order.OrderProducts.Sum(ordPr => ordPr.Count * ordPr.Product.Price)
+            };
+        }
+        public async Task<object> FullOrderInfo(int id)
+        {
+            OrderModel order = await GetFullOrderById(id);
+
+            return new
+            {
+                OrderProducts = order.OrderProducts,
+                CountProducts = order.OrderProducts.Sum(ordPr => ordPr.Count)
+            };
         }
     }
 }
