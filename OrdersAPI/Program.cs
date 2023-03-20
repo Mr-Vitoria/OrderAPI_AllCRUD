@@ -47,47 +47,6 @@ builder.Services.AddTransient<IDaoTemplate<OrderProductModel>, DbDaoOrderProduct
 
 var app = builder.Build();
 
-var token = String.Empty;
-
-var people = new List<Person>
- {
-    new Person("tom@gmail.com", "12345"),
-    new Person("bob@gmail.com", "55555")
-};
-app.MapPost("/login", (Person loginData) =>
-{
-    // находим пользователя 
-    Person? person = people.FirstOrDefault(p => p.Email == loginData.Email && p.Password == loginData.Password);
-    // если пользователь не найден, отправляем статусный код 401
-    if (person is null) return Results.Unauthorized();
-
-    var claims = new List<Claim> { new Claim(ClaimTypes.Name, person.Email) };
-    // создаем JWT-токен
-    var jwt = new JwtSecurityToken(
-            issuer: AuthOptions.ISSUER,
-            audience: AuthOptions.AUDIENCE,
-            claims: claims,
-            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
-            signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
-    token = new JwtSecurityTokenHandler().WriteToken(jwt);
-
-    // формируем ответ
-    var response = new
-    {
-        access_token = token,
-        username = person.Email
-    };
-
-    return Results.Json(response);
-});
-app.Map("/data",(HttpContext context) =>
-{
-    if(token==String.Empty)
-    {
-        return "No authorized";
-    }
-    return "Hello world!!!";
-});
 
 
 
@@ -105,15 +64,15 @@ app.MapGet("/client/get", async (HttpContext context, IDaoTemplate<ClientModel> 
     return await dao.GetById(id);
 });
 
-app.MapPost("/client/add", async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
+app.MapPost("/client/add", [Authorize] async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
 {
     return await dao.Add(client);
 });
-app.MapPost("/client/update", async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
+app.MapPost("/client/update", [Authorize] async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
 {
     return await dao.Update(client);
 });
-app.MapPost("/client/delete", async (HttpContext context, IDaoTemplate<ClientModel> dao, int id) =>
+app.MapPost("/client/delete", [Authorize] async (HttpContext context, IDaoTemplate<ClientModel> dao, int id) =>
 {
     return await dao.Delete(id);
 });
@@ -130,15 +89,15 @@ app.MapGet("/product/get", async (HttpContext context, IDaoTemplate<ProductModel
     return await dao.GetById(id);
 });
 
-app.MapPost("/product/add", async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
+app.MapPost("/product/add", [Authorize] async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
 {
     return await dao.Add(product);
 });
-app.MapPost("/product/update", async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
+app.MapPost("/product/update", [Authorize] async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
 {
     return await dao.Update(product);
 });
-app.MapPost("/product/delete", async (HttpContext context, IDaoTemplate<ProductModel> dao, int id) =>
+app.MapPost("/product/delete", [Authorize] async (HttpContext context, IDaoTemplate<ProductModel> dao, int id) =>
 {
     return await dao.Delete(id);
 });
@@ -159,15 +118,15 @@ app.MapGet("/order/get", async (HttpContext context, IDaoOrder dao, int id) =>
     return await dao.GetById(id);
 });
 
-app.MapPost("/order/add", async (HttpContext context, OrderModel order, IDaoOrder dao) =>
+app.MapPost("/order/add", [Authorize] async (HttpContext context, OrderModel order, IDaoOrder dao) =>
 {
     return await dao.Add(order);
 });
-app.MapPost("/order/update", async (HttpContext context, OrderModel order, IDaoOrder dao) =>
+app.MapPost("/order/update", [Authorize] async (HttpContext context, OrderModel order, IDaoOrder dao) =>
 {
     return await dao.Update(order);
 });
-app.MapPost("/order/delete", async (HttpContext context, IDaoOrder dao, int id) =>
+app.MapPost("/order/delete", [Authorize] async (HttpContext context, IDaoOrder dao, int id) =>
 {
     return await dao.Delete(id);
 });
@@ -184,15 +143,15 @@ app.MapGet("/order_product/get", async (HttpContext context, IDaoTemplate<OrderP
     return await dao.GetById(id);
 });
 
-app.MapPost("/order_product/add", async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
+app.MapPost("/order_product/add", [Authorize] async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
 {
     return await dao.Add(order);
 });
-app.MapPost("/order_product/update", async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
+app.MapPost("/order_product/update", [Authorize] async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
 {
     return await dao.Update(order);
 });
-app.MapPost("/order_product/delete", async (HttpContext context, IDaoTemplate<OrderProductModel> dao, int id) =>
+app.MapPost("/order_product/delete", [Authorize] async (HttpContext context, IDaoTemplate<OrderProductModel> dao, int id) =>
 {
     return await dao.Delete(id);
 });
