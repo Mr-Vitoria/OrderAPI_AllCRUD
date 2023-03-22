@@ -40,7 +40,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     }); 
 
 builder.Services.AddDbContext<ApplicationDbContext>();
-builder.Services.AddTransient<IDaoTemplate<ClientModel>, DbDaoClient>();
+using (ApplicationDbContext db = new ApplicationDbContext())
+{
+    await db.Database.MigrateAsync();
+}
+    builder.Services.AddTransient<IDaoTemplate<ClientModel>, DbDaoClient>();
 builder.Services.AddTransient<IDaoTemplate<ProductModel>, DbDaoProduct>();
 builder.Services.AddTransient<IDaoOrder, DbDaoOrder>();
 builder.Services.AddTransient<IDaoTemplate<OrderProductModel>, DbDaoOrderProduct>();
