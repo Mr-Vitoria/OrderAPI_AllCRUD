@@ -40,14 +40,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     }); 
 
 builder.Services.AddDbContext<ApplicationDbContext>();
-using (ApplicationDbContext db = new ApplicationDbContext())
-{
-    db.Database.Migrate();
-}
-    builder.Services.AddTransient<IDaoTemplate<ClientModel>, DbDaoClient>();
+
+builder.Services.AddTransient<IDaoTemplate<ClientModel>, DbDaoClient>();
 builder.Services.AddTransient<IDaoTemplate<ProductModel>, DbDaoProduct>();
 builder.Services.AddTransient<IDaoOrder, DbDaoOrder>();
 builder.Services.AddTransient<IDaoTemplate<OrderProductModel>, DbDaoOrderProduct>();
+
 
 var app = builder.Build();
 
@@ -187,5 +185,10 @@ app.MapGet("/fullOrderInfo", async (HttpContext context, IDaoOrder dao, int Orde
 });
 
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    db.Database.Migrate();
+}
 
 app.Run();
