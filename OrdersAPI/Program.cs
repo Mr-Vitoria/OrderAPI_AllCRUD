@@ -52,10 +52,23 @@ var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
 
+app.Map("/login/{username}", (string username) =>
+{
+    var claims = new List<Claim> { new Claim(ClaimTypes.Name, username) };
+    // создаем JWT-токен
+    var jwt = new JwtSecurityToken(
+            issuer: AuthOptions.ISSUER,
+            audience: AuthOptions.AUDIENCE,
+            claims: claims,
+            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
+            signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
+
+    return new JwtSecurityTokenHandler().WriteToken(jwt);
+});
 
 //Client table
 
-app.MapGet("/client/all", async (HttpContext context, IDaoTemplate<ClientModel> dao) =>
+app.MapGet("/client/all",  async (HttpContext context, IDaoTemplate<ClientModel> dao) =>
 {
     return await dao.GetAll();
 });

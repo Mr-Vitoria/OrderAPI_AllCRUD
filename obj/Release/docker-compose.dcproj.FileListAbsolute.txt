@@ -13,3 +13,10 @@ E:\GitHub\OrderAPI_AllCRUD\bin\Release\OrdersAPI.pdb
 E:\GitHub\OrderAPI_AllCRUD\obj\Release\docker-compose.dcproj.AssemblyReference.cache
 E:\GitHub\OrderAPI_AllCRUD\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache
 E:\GitHub\OrderAPI_AllCRUD\obj\Release\docker-compose.dcproj.CopyComplete
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\System.IdentityModel.Tokens.Jwt.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.IdentityModel.Tokens.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.IdentityModel.Protocols.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.IdentityModel.Logging.dll
+E:\GitHub\OrderAPI_AllCRUD\bin\Release\Microsoft.IdentityModel.JsonWebTokens.dll
