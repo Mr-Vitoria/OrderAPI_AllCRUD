@@ -16,6 +16,7 @@ using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//JWT токен
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -79,15 +80,15 @@ app.MapGet("/client/get", async (HttpContext context, IDaoTemplate<ClientModel> 
     return await dao.GetById(id);
 });
 
-app.MapPost("/client/add", [Authorize] async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
+app.MapPost("/client/add",  async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
 {
     return await dao.Add(client);
 });
-app.MapPost("/client/update", [Authorize] async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
+app.MapPost("/client/update",  async (HttpContext context, ClientModel client, IDaoTemplate<ClientModel> dao) =>
 {
     return await dao.Update(client);
 });
-app.MapPost("/client/delete", [Authorize] async (HttpContext context, IDaoTemplate<ClientModel> dao, int id) =>
+app.MapPost("/client/delete",  async (HttpContext context, IDaoTemplate<ClientModel> dao, int id) =>
 {
     return await dao.Delete(id);
 });
@@ -104,15 +105,15 @@ app.MapGet("/product/get", async (HttpContext context, IDaoTemplate<ProductModel
     return await dao.GetById(id);
 });
 
-app.MapPost("/product/add", [Authorize] async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
+app.MapPost("/product/add",  async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
 {
     return await dao.Add(product);
 });
-app.MapPost("/product/update", [Authorize] async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
+app.MapPost("/product/update",  async (HttpContext context, ProductModel product, IDaoTemplate<ProductModel> dao) =>
 {
     return await dao.Update(product);
 });
-app.MapPost("/product/delete", [Authorize] async (HttpContext context, IDaoTemplate<ProductModel> dao, int id) =>
+app.MapPost("/product/delete",  async (HttpContext context, IDaoTemplate<ProductModel> dao, int id) =>
 {
     return await dao.Delete(id);
 });
@@ -133,15 +134,15 @@ app.MapGet("/order/get", async (HttpContext context, IDaoOrder dao, int id) =>
     return await dao.GetById(id);
 });
 
-app.MapPost("/order/add", [Authorize] async (HttpContext context, OrderModel order, IDaoOrder dao) =>
+app.MapPost("/order/add",  async (HttpContext context, OrderModel order, IDaoOrder dao) =>
 {
     return await dao.Add(order);
 });
-app.MapPost("/order/update", [Authorize] async (HttpContext context, OrderModel order, IDaoOrder dao) =>
+app.MapPost("/order/update",  async (HttpContext context, OrderModel order, IDaoOrder dao) =>
 {
     return await dao.Update(order);
 });
-app.MapPost("/order/delete", [Authorize] async (HttpContext context, IDaoOrder dao, int id) =>
+app.MapPost("/order/delete",  async (HttpContext context, IDaoOrder dao, int id) =>
 {
     return await dao.Delete(id);
 });
@@ -158,15 +159,15 @@ app.MapGet("/order_product/get", async (HttpContext context, IDaoTemplate<OrderP
     return await dao.GetById(id);
 });
 
-app.MapPost("/order_product/add", [Authorize] async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
+app.MapPost("/order_product/add",  async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
 {
     return await dao.Add(order);
 });
-app.MapPost("/order_product/update", [Authorize] async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
+app.MapPost("/order_product/update",  async (HttpContext context, OrderProductModel order, IDaoTemplate<OrderProductModel> dao) =>
 {
     return await dao.Update(order);
 });
-app.MapPost("/order_product/delete", [Authorize] async (HttpContext context, IDaoTemplate<OrderProductModel> dao, int id) =>
+app.MapPost("/order_product/delete",  async (HttpContext context, IDaoTemplate<OrderProductModel> dao, int id) =>
 {
     return await dao.Delete(id);
 });
